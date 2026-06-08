@@ -1,4 +1,4 @@
-FROM mariadb:11.8
+FROM mariadb:12.3
 
 LABEL maintainer.name="Pivotal Agency" \
       maintainer.email="tech@pvtl.io"

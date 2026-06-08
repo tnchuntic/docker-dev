@@ -35,7 +35,7 @@ It includes all the required dependencies for everyday PHP development with comm
     - Wordpress CLI*
     - ZSH*
 - Mailpit
-- MariaDB 11.8 LTS
+- MariaDB 12.3
 
 <p><i>* Only available in latest PHP container</i></p>
 
