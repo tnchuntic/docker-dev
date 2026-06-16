@@ -5,6 +5,17 @@ Blackfire is a PHP profiler that helps you analyse the performance of your code.
 We only support PHP 8.1+ for Blackfire. The extension is disabled by default.
 
 
+## Installation
+
+Blackfire is an **optional** service and is **not installed or enabled by default**. To enable it, add the `blackfire.yml` file to your `COMPOSE_FILE` list in the `.env` file and fill in the Blackfire environment variables. For example, on Unix systems:
+
+```bash
+COMPOSE_FILE=docker-compose.yml:opt/blackfire.yml
+```
+
+After updating the `.env` file, run `docker compose up -d --remove-orphans` to start the service.
+
+
 ## How it works
 
 Blackfire works by profiling your code as it runs.

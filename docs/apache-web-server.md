@@ -3,6 +3,11 @@
 We use the official [Apache](https://hub.docker.com/_/httpd) image and apply some light customisations on top (ie. enabling modules).
 
 
+## Installation
+
+Apache is a **default** service and is **always enabled and cannot be disabled**.
+
+
 ## `<folder>.localhost` is not working
 
 Double-check your Docker Dev containers are running.

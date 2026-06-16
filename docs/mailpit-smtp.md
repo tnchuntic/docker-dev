@@ -5,6 +5,11 @@ Mailpit acts as an SMTP server and also provides a web interface to view all cap
 We use the official [Mailpit](https://hub.docker.com/r/axllent/mailpit) image.
 
 
+## Installation
+
+Mailpit is a **default** service and is **always enabled and cannot be disabled**.
+
+
 ## General Use
 
 When PHP sends emails using sendmail or SMTP, it's automatically "caught" by [Mailpit](https://github.com/axllent/mailpit). This enables you to review the emails without delivering them to real email addresses.

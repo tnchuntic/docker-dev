@@ -3,6 +3,19 @@
 We use the [official PHP Docker images](https://hub.docker.com/_/php) and add a few extra features to make them nicer for everyday use.
 
 
+## Installation
+
+PHP 8.5 is a **default** service and is **always enabled and cannot be disabled**.
+
+Other PHP versions (5.6, all 7.x and all 8.x) are **optional** and are **not installed or enabled by default**. To enable an additional version, add its corresponding YAML file to the `COMPOSE_FILE` list in the `.env` file. For example, to enable PHP 7.4 on Unix systems:
+
+```bash
+COMPOSE_FILE=docker-compose.yml:opt/php74.yml
+```
+
+After updating the `.env` file, run `docker compose up -d --remove-orphans` to start the service.
+
+
 ## Which versions are available?
 We offer 5.6, all 7.x and all 8.x. The default version is PHP 8.5.
 

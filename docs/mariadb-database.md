@@ -5,6 +5,11 @@ MariaDB is (mostly) a drop-in replacement for MySQL, so you can use the same too
 We use the official [MariaDB](https://hub.docker.com/_/mariadb) image.
 
 
+## Installation
+
+MariaDB is a **default** service and is **always enabled and cannot be disabled**.
+
+
 ## Connecting
 
 | Parameter | Value |
