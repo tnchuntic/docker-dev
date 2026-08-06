@@ -44,7 +44,6 @@ You can enable as many versions of PHP as you like, but note that starting or up
 Only the latest version of PHP has these tools installed:
 
 - Node.js (latest LTS) & NPM (latest)
-- Yarn (latest of 1.x)
 - PHPCS (with Wordpress code standards added)
 - Wordpress CLI
 - ZSH

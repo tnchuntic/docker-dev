@@ -35,7 +35,7 @@ We use the [official PHP images](https://hub.docker.com/_/php) and add:
 - Composer
 - GD Library
 - Mailpit
-- Node/NPM/Yarn (PHP Latest)
+- Node/NPM (PHP Latest)
 - Wordpress CLI (PHP Latest)
 
 

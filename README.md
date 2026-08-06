@@ -30,7 +30,6 @@ It includes all the required dependencies for everyday PHP development with comm
 - PHP 8.5
     - Composer (latest)
     - Node.js (latest LTS) & NPM (latest)*
-    - Yarn (latest of 1.x)*
     - PHPCS (with Wordpress code standards added)*
     - Wordpress CLI*
     - ZSH*
