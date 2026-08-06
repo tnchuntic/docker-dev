@@ -43,10 +43,9 @@ RUN pie install php-memcached/php-memcached \
   && pie install phpredis/phpredis \
   && pie install xdebug/xdebug \
   && pie install pecl/pcov \
-  && docker-php-ext-install -j$(nproc) bcmath calendar exif intl mysqli pdo_mysql soap xsl zip \
-  && docker-php-ext-enable memcached redis pcov \
   && docker-php-ext-configure gd --with-freetype --with-jpeg --with-webp \
-  && docker-php-ext-install -j$(nproc) gd
+  && docker-php-ext-install -j$(nproc) bcmath calendar exif intl mysqli pdo_mysql soap xsl zip gd \
+  && docker-php-ext-enable memcached redis pcov
 
 # Blackfire
 # RUN version=$(php -r "echo PHP_MAJOR_VERSION.PHP_MINOR_VERSION;") \
