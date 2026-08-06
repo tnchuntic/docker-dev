@@ -26,7 +26,6 @@ We use the [official PHP images](https://hub.docker.com/_/php) and add:
     - Bcmath
     - Mcrypt
     - Memcached
-    - Opcache
     - Valkey/Redis
     - Xdebug
     - PCOV

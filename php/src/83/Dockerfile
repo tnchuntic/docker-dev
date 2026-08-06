@@ -46,7 +46,7 @@ RUN pie install php-memcached/php-memcached \
   && pie install xdebug/xdebug \
   && pie install pecl/pcov \
   && pie install pecl/mcrypt \
-  && docker-php-ext-install -j$(nproc) bcmath calendar exif intl mysqli opcache pdo_mysql soap xsl zip \
+  && docker-php-ext-install -j$(nproc) bcmath calendar exif intl mysqli pdo_mysql soap xsl zip \
   && docker-php-ext-enable mcrypt memcached redis xdebug pcov \
   && mv /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini.DISABLED \
   && docker-php-ext-configure gd --with-freetype --with-jpeg --with-webp \
