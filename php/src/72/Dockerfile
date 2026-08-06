@@ -20,7 +20,6 @@ RUN apt update && apt install -y --no-install-recommends \
     libxml2-dev \
     libxslt-dev \
     nano \
-    net-tools \
     ssh \
     sudo \
     supervisor \

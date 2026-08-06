@@ -24,7 +24,6 @@ RUN apt update && apt install -y --no-install-recommends \
     libz-dev \
     libzip-dev \
     nano \
-    net-tools \
     powerline \
     ssh \
     sudo \

@@ -19,7 +19,7 @@ We use the [official PHP images](https://hub.docker.com/_/php) and add:
 - Helpful tools such as:
     - Git
     - Nano
-    - Net-tools (ping, dig)
+    - Ping
     - SSH
     - Zip
 - PHP dependencies such as:
