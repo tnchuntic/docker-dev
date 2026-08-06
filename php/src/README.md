@@ -16,15 +16,15 @@ We're publishing pre-built images on the Docker Hub so users can simply pull and
 
 We use the [official PHP images](https://hub.docker.com/_/php) and add:
 
-- Helpful OS tools such as:
+- Helpful tools such as:
     - Git
     - Nano
-    - Net-tools
+    - Net-tools (ping, dig)
     - SSH
     - Zip
-- PHP Dependencies such as:
+- PHP dependencies such as:
     - Bcmath
-    - Mcrypt
+    - Mcrypt (PHP 7.1 and below)
     - Memcached
     - Valkey/Redis
     - Xdebug

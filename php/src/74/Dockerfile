@@ -14,7 +14,6 @@ RUN apt update && apt install -y --no-install-recommends \
     libfreetype6-dev \
     libicu-dev \
     libjpeg62-turbo-dev \
-    libmcrypt-dev \
     libmemcached-dev \
     libpng-dev \
     libwebp-dev \
@@ -31,9 +30,9 @@ RUN apt update && apt install -y --no-install-recommends \
     zsh \
     fonts-powerline \
     powerline \
-  && yes '' | pecl install -f memcached redis xdebug mcrypt \
+  && yes '' | pecl install -f memcached redis xdebug \
   && docker-php-ext-install -j$(nproc) bcmath calendar exif intl mysqli pdo_mysql soap xsl zip\
-  && docker-php-ext-enable mcrypt memcached redis xdebug\
+  && docker-php-ext-enable memcached redis xdebug\
   && mv /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini.DISABLED \
   && apt clean \
   && rm -rf /var/lib/apt/lists/*
