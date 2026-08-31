@@ -71,16 +71,6 @@ COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
 # (so we can use it's "sendmail" compatible binary)
 COPY --from=axllent/mailpit:latest /mailpit /usr/bin/mailpit
 
-# Node.js using "Node Version Manager"
-RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.6/install.sh | bash \
-  && export NVM_DIR="$HOME/.nvm" \
-  && [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" \
-  && [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" \
-  && nvm install 24
-
-# Wordpress CLI
-COPY --from=wordpress:cli /usr/local/bin/wp /usr/local/bin/wp
-
 # Update site's directory permissions
 RUN chown -R www-data /var/www/
 
